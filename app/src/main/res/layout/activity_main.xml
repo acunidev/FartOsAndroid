@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/naruto_background"
+    tools:context=".activityfartos.MainActivity">
+
+    <Button
+        android:id="@+id/btnMostrarOcultarCartas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mostrar cartas" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerIconosPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCasillas"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCartas"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="520dp" />
+
+</RelativeLayout>
